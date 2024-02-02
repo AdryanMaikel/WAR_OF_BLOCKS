@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_gun",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_gun_ak47",
+    "path": "sprites/spr_gun_ak47/spr_gun_ak47.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

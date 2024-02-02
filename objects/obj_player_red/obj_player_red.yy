@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_gun_glock",
+  "name": "obj_player_red",
   "spriteId": {
-    "name": "spr_gun_glock",
-    "path": "sprites/spr_gun_glock/spr_gun_glock.yy",
+    "name": "spr_player",
+    "path": "sprites/spr_player/spr_player.yy",
   },
   "solid": false,
   "visible": true,
@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_gun",
-    "path": "objects/obj_gun/obj_gun.yy",
+    "name": "obj_player",
+    "path": "objects/obj_player/obj_player.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,9 +27,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {

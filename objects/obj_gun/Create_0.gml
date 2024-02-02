@@ -12,8 +12,10 @@ direction_and_shooting = function() {
 	if instance_exists(obj_player) {
 		x = obj_player.x
 		y = obj_player.y
-
+		
+		
 		direction = point_direction(x, y, mouse_x, mouse_y)
+		/*
 		if direction < 280 and direction > 90 {
 			image_yscale = -1
 			obj_player.image_xscale = -1
@@ -21,6 +23,7 @@ direction_and_shooting = function() {
 			image_yscale = 1
 			obj_player.image_xscale = 1
 		}
+		*/
 	}
 	image_angle = direction
 	#endregion
@@ -31,9 +34,7 @@ direction_and_shooting = function() {
 		if amount_bullets and next_shot == 0 {
 			amount_bullets--
 			next_shot = speed_attack
-			var _weapon_tip_x = lengthdir_x(20, direction)
-			var _weapon_tip_y = lengthdir_y(20, direction)
-			var _shot = instance_create_layer(x + _weapon_tip_x, y + _weapon_tip_y, "Instances", obj_shot)
+			var _shot = instance_create_layer(x, y, "Instances", obj_shot)
 			_shot.direction = direction
 			_shot.image_angle = direction
 			_shot.speed = 15
